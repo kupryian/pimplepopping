@@ -53,17 +53,17 @@
 <header>
   <h1>Privacy Policy</h1>
   <p class="sub">Pimple Popping — a game about skincare procedures<br>
-  Effective date: 10 September 2026</p>
+  Effective date: 8 October 2026</p>
 </header>
 
 <div class="lead">
-  <p><strong>The short version.</strong> Pimple Popping has no accounts, no
-  analytics and no servers of ours. We never see your name, your email or your
-  progress: everything you do in the game is written to your own device and
-  stays there. The one thing that does leave your phone is a request for an
-  advert — and only when you choose to watch one in exchange for a crystal.
-  Google, which supplies those adverts, receives your advertising identifier
-  and IP address to do it.</p>
+  <p><strong>The short version.</strong> We collect nothing. Pimple Popping has no
+  accounts, no analytics and no servers of ours; everything you do in the Game
+  is written to your own device and stays there. The one exception is
+  advertising: the Game offers an optional reward video, served by Google
+  AdMob or by Yandex Ads, and these companies collect device identifiers, your
+  IP address and interaction data in order to serve it. Nothing they collect
+  reaches us.</p>
 </div>
 
 <p>This policy explains what happens to information when you use Pimple Popping (the
@@ -72,33 +72,16 @@ Android version distributed through Google Play.</p>
 
 <h2>1. Information we collect</h2>
 
-<p><strong>We collect nothing ourselves.</strong> We do not ask for your name,
-email address, phone number, or any account. There is no sign-in and no
-profile. The Game contains no analytics and no crash reporting, and we operate
-no servers — there is nowhere for your information to be sent to us, and
-nothing of yours for us to hold.</p>
+<p><strong>None.</strong> We do not ask for your name, email address, phone
+number, or any account. There is no sign-in and no profile. The Game contains
+no analytics, no crash reporting and no tracking of ours of any kind.</p>
 
-<p>The Game does show <strong>rewarded video adverts</strong>, supplied by
-Google AdMob, and only when you choose to watch one. To select and deliver an
-advert, and to measure whether it was watched, Google collects:</p>
+<p>We operate no servers. There is nowhere for your information to be sent to
+us, and nothing of yours for us to hold.</p>
 
-<ul>
-  <li>your device's <strong>advertising identifier</strong> — a resettable ID
-  that you can change or delete at any time in Android settings;</li>
-  <li>your <strong>IP address</strong>, and from it your approximate location
-  (country or region, not a street address);</li>
-  <li>information about the device and the advert itself: model, operating
-  system version, which advert was shown and for how long.</li>
-</ul>
-
-<p>This data goes to Google, not to us. We see only anonymous totals in our
-AdMob account — how many adverts were watched and how much they earned. Google
-handles it under its own privacy policy, which you can read at
-<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>,
-and its use of the advertising identifier is described at
-<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
-
-<p>If you never open an advert, nothing leaves your device at all.</p>
+<p>Our advertising partners are a separate matter. Google and Yandex collect
+data through the adverts in the Game, and <a href="#ads">section 4</a> sets out
+exactly what and when.</p>
 
 <h2>2. What the Game stores on your device</h2>
 
@@ -119,36 +102,87 @@ Android's settings. Because we never receive it, we cannot restore it for you
 
 <h2>3. Permissions</h2>
 
-<p>The Game requests <strong>vibration</strong>, for the small buzz when a
-procedure goes wrong, and <strong>internet access</strong> together with the
-permissions the advertising SDK needs to fetch an advert and read the
-advertising identifier.</p>
+<p>The Game itself requests one Android permission: <strong>vibration</strong>,
+used for the small buzz when a procedure goes wrong.</p>
 
-<p>It does not request the camera, microphone, contacts, files, precise
-location, or any other permission.</p>
+<p>The advertising component adds <strong>internet access</strong>,
+<strong>network state</strong> and the <strong>advertising ID</strong>
+permission, together with several background-service permissions that the
+Google Mobile Ads SDK and the Yandex Mobile Ads SDK declare on their own
+behalf. They exist so that an advert can be fetched and shown; the Game uses
+none of them for anything else.</p>
 
-<h2>4. Advertising and purchases</h2>
+<p>Nothing requests the camera, microphone, contacts, files or device
+location.</p>
 
-<p>The Game contains <strong>no in-app purchases</strong>. It is free, and there
-is nothing in it to buy. We never see payment information of any kind.</p>
+<h2 id="ads">4. Advertising and purchases</h2>
 
-<p>Advertising is limited to a single place and a single kind: a
-<strong>rewarded video</strong>, offered when you run out of crystals, in
-exchange for one crystal. You choose whether to watch it. Nothing is shown
-between visits, before a procedure, or anywhere else in the game, and no advert
-ever interrupts you.</p>
+<p>There are <strong>no in-app purchases</strong>. Nothing in the Game costs
+money, and we never see payment information of any kind.</p>
 
-<p>You are never required to watch one. Crystals also return on their own —
-one every forty minutes — and can be traded for with stars earned by doing the
-work well. If you never touch an advert, you can play the whole game.</p>
+<p>There is one advert, and it is <strong>optional</strong>: a reward video in
+the till, which you may choose to watch in exchange for one crystal when your
+crystals have run out. There are no banners, nothing plays between visitors,
+and nothing plays unless you ask for it. Decline it and the till still offers
+you the clock and the exchange of stars.</p>
+
+<p>The advert is served by <strong>Google AdMob</strong> or, when Google has
+none to offer, by <strong>Yandex Ads</strong>. So that the video is ready the
+moment you ask for it, both advertising SDKs start with the Game and fetch an
+advert in advance — which means the Game contacts Google and Yandex at launch,
+not only when you press the button.</p>
+
+<h3>Google AdMob</h3>
+
+<p>By Google's own account, the Google Mobile Ads SDK collects and shares the
+following, for advertising, analytics and fraud prevention:</p>
+
+<ul>
+  <li>your device's <strong>IP address</strong>, which may be used to estimate
+  its general location;</li>
+  <li><strong>interactions</strong> with the app and the advert — launches,
+  taps, video views;</li>
+  <li><strong>diagnostic information</strong> about performance, such as launch
+  time, hang rate and energy use;</li>
+  <li><strong>device and account identifiers</strong>, including the Android
+  advertising ID and the app set ID.</li>
+</ul>
+
+<p>All of it goes to Google and is encrypted in transit. None of it comes to
+us: we see aggregate earnings in the AdMob console and nothing about any
+individual person. Google's current description of what its SDK collects is
+published at
+<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">developers.google.com/admob/android/privacy/play-data-disclosure</a>,
+and how Google uses data from apps that use its services is set out at
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Yandex Ads</h3>
+
+<p>By Yandex's own account, the Yandex Mobile Ads SDK collects and shares
+<strong>device identifiers</strong>, including the Android advertising ID, for
+advertising: to show adverts and to measure them. The SDK also includes
+<strong>AppMetrica</strong>, Yandex's analytics library, which it runs in an
+anonymous mode for its own purposes; AppMetrica may collect crash reports and
+diagnostic information about the device and the SDK's performance.</p>
+
+<p>All of it goes to Yandex and is encrypted in transit. None of it comes to
+us: we see aggregate earnings in the Yandex Ads interface and nothing about any
+individual person. Yandex's description of what its SDK collects is published
+at
+<a href="https://ads.yandex.com/helpcenter/en/dev/android/app-privacy-android">ads.yandex.com/helpcenter/en/dev/android/app-privacy-android</a>,
+and Yandex's privacy policy is at
+<a href="https://yandex.com/legal/confidential/">yandex.com/legal/confidential</a>.</p>
 
 <div class="note">
-  <p><strong>Consent.</strong> Players in the European Economic Area, the
-  United Kingdom and Switzerland are asked for consent before any personalised
-  advert is shown, through Google's own consent form. If you decline, or if
-  the form cannot be shown, adverts are non-personalised — chosen without using
-  your data. You can change your choice at any time by resetting the
-  advertising identifier in Android settings.</p>
+  <p><strong>Consent, and how to say no.</strong> In the European Economic Area,
+  the United Kingdom and Switzerland a consent form provided by Google appears
+  before any personalised advert is shown, and your answer is yours to change.
+  Refuse, and adverts are served without personalisation rather than not at
+  all. Players in those regions are always shown Yandex adverts without
+  personalisation. Where Google requires it, the Game's settings offer a
+  “Privacy” button to change your answer at any time. Anywhere in the world you can reset or delete your advertising ID in
+  Android's own settings, under Privacy → Ads; and you can simply never press
+  the button, in which case no advert is ever shown to you.</p>
 </div>
 
 <h2>5. Children</h2>
@@ -166,18 +200,18 @@ UK GDPR, and the CCPA/CPRA in California — give you rights to access, correct,
 delete, restrict or object to the processing of your personal data, and to data
 portability.</p>
 
-<p>We ourselves hold no personal data about you: there is nothing on our side
-to access, export or erase, and nothing for us to sell or share. We do not sell
-or share personal information, for money or otherwise.</p>
+<p>Against us these rights have nothing to bite on: we hold no personal data,
+we process none, and we sell and share none, for money or otherwise. There is
+nothing for us to export or erase because nothing reaches us in the first
+place.</p>
 
-<p>The data collected for advertising is held by Google, not by us, so requests
-about it are best made to Google directly through the links in section 1. Two
-things are entirely in your hands: you can reset or delete your advertising
-identifier in Android settings, and you can simply never open an advert — the
-game is fully playable without them.</p>
-
-<p>If you believe otherwise, write to us and we will answer. You also have the
-right to complain to your local data protection authority.</p>
+<p>The data described in section 4 is held by Google and Yandex, not by us,
+and rights over it are exercised against them through their privacy policies:
+<a href="https://policies.google.com/privacy">Google's</a> and
+<a href="https://yandex.com/legal/confidential/">Yandex's</a>. If you
+would rather start with us, write and we will answer and point you the right
+way. You also have the right to complain to your local data protection
+authority.</p>
 
 <h2>7. Changes to this policy</h2>
 
